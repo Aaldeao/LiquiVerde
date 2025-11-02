@@ -13,20 +13,30 @@ Esta guía asume una ejecución local estándar del backend API (sin Docker).
 * **Java Development Kit (JDK) 17**.
 * **Apache Maven**.
 * **Servidor PostgreSQL Local** (corriendo en el puerto por defecto `5432`).
+* **Node.js y npm** (para ejecutar el frontend)
 
-### 1.2. Configuración de la Base de Datos
+### 1.2. Descarga del Proyecto
+
+1. **Descargar el repositorio desde GitHub:**
+
+   - **Opción A:** Clonar el repositorio directamente:
+     ```bash
+     git clone https://github.com/Aaldeao/LiquiVerde.git
+     ```
+
+   - **Opción B:** Descargar el repositorio como archivo ZIP desde GitHub y **descomprimirlo** en una carpeta local.
+
+2. **Abrir el proyecto** en tu entorno de desarrollo preferido (por ejemplo, Visual Studio Code o IntelliJ IDEA).
+
+### 1.3. Configuración de la Base de Datos
 
 Debe configurar una base de datos local que coincida con la configuración del proyecto.
 
-1.  **Crear Base de Datos y Usuario:**
-    Ejecute los siguientes comandos SQL:
+1.  **Crear Base de Datos**
+    Ejecute el siguiente comandos SQL:
     ```sql
     -- 1. Crear la base de datos
     CREATE DATABASE grupolagos;
-    
-    -- 2. Crear el usuario (si es necesario) y otorgar permisos
-    CREATE USER liquiverde_user WITH PASSWORD 'your_strong_password';
-    GRANT ALL PRIVILEGES ON DATABASE grupolagos TO liquiverde_user;
     ```
 2.  **Verificación de `application.properties`:**
     Asegúrese de que el archivo **`src/main/resources/application.properties`** contenga las credenciales de conexión local:
@@ -40,7 +50,7 @@ Debe configurar una base de datos local que coincida con la configuración del p
     ```
     ***Importante:*** *Use su contraseña real de PostgreSQL en el archivo.*
 
-### 1.3. Ejecución de la Aplicación
+### 1.4. Ejecución de la Aplicación
 
 #### Backend
 Desde la terminal, dentro de la carpeta raíz del proyecto `LiquiVerde`, ejecuta:
