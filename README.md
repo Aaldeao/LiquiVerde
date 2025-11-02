@@ -32,7 +32,7 @@ Esta guía asume una ejecución local estándar del backend API (sin Docker).
 
 Debe configurar una base de datos local que coincida con la configuración del proyecto.
 
-1.  **Crear Base de Datos**
+1.  **Crear Base de Datos:**
     Ejecute el siguiente comandos SQL:
     ```sql
     -- 1. Crear la base de datos
