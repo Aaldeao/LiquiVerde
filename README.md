@@ -92,15 +92,14 @@ El sistema busca alternativas dentro de la misma categoría.
 
 Se asume que los scores de sostenibilidad se han pre-calculado y almacenado en la tabla `productos`. La integración con APIs externas (como Open Food Facts o Carbon Interface) se realizaría inyectando las URLs y claves mediante variables de entorno como: `OFF_API_URL`, `CARBON_API_KEY`, etc.
 
-### 2.4. Uso de APIs Externas (Open Food Facts)
+### 2.4. Uso de APIs
 
-Aunque se planificó la integración con APIs externas como Open Food Facts, la mayoría de las APIs no estaban disponibles o inválidas.  
-Por ejemplo, la consulta:
+Aunque se planificó la integración con APIs externas como **Open Food Facts**, las pruebas iniciales mostraron que la calidad y consistencia de los datos recuperados no eran adecuadas. La respuesta del API resultó inconsistente y además la mayoría de las APIs estaban no disponibles o inválidas. Por ejemplo, al consultar la siguiente URL:
 ```bash
 https://world.openfoodfacts.org/api/v2/search?countries=chile&categories=food
 ```
-solo devolvía correctamente el nombre de un producto; los demás datos no contenían el nombre ni otros campos necesarios.
-Debido a esto, se decidió **realizar las pruebas utilizando datos locales** almacenados en la base de datos del proyecto, es decir, los productos contenidos en **`data.sql`**.
+Debido a esto, se decidió **utilizar datos locales** almacenados en la base de datos del proyecto, es decir, los productos contenidos en **`data.sql`**.
+
 ---
 
 ## 📦 3. Dataset de Ejemplo con Productos
