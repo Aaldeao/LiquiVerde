@@ -108,7 +108,7 @@ Se requiere cargar datos en la tabla `productos` para probar la optimización. E
 
 ---
 
-## 🤖 Uso de IA
+## 🤖 4. Uso de IA
 
 Durante el desarrollo de **LiquiVerde**, se utilizó Inteligencia Artificial para apoyar en distintas áreas:
 
