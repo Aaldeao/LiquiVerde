@@ -56,7 +56,7 @@ Luego:
 ```bash
 npm run dev
 ```
-Esto levantará la aplicación frontend en modo desarrollo, accesible en: [http://localhost:5173/](http://localhost:5173/)
+Esto levantará la aplicación frontend en: [http://localhost:5173/](http://localhost:5173/)
 
 ---
 
@@ -86,9 +86,7 @@ El sistema busca alternativas dentro de la misma categoría.
 
 * **Criterio de Sustitución (`ProductoService.java`):** Una alternativa es válida si es **más sostenible** (mayor `ScoreTotal`) **O** es **más económica** (menor `Precio`) que el producto original.
 
-    $$
-    \text{Alternativa Válida} \iff (\text{ScoreTotal}_{\text{alt}} > \text{ScoreTotal}_{\text{orig}}) \quad \lor \quad (\text{Precio}_{\text{alt}} < \text{Precio}_{\text{orig}})
-    $$
+Alternativa Válida si: ScoreTotal es mayor O Precio es menor.
 
 * **Priorización:** Las alternativas válidas se ordenan de forma descendente basándose en su `ScoreTotal` para promover las opciones más sostenibles.
 
