@@ -86,8 +86,6 @@ El sistema busca alternativas dentro de la misma categoría.
 
 * **Criterio de Sustitución (`ProductoService.java`):** Una alternativa es válida si es **más sostenible** (mayor `ScoreTotal`) **O** es **más económica** (menor `Precio`) que el producto original.
 
-Alternativa Válida si: ScoreTotal es mayor O Precio es menor.
-
 * **Priorización:** Las alternativas válidas se ordenan de forma descendente basándose en su `ScoreTotal` para promover las opciones más sostenibles.
 
 ### 2.3. Configuración de APIs y Variables de Entorno
