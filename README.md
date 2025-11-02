@@ -94,14 +94,13 @@ Se asume que los scores de sostenibilidad se han pre-calculado y almacenado en l
 
 ### 2.4. Uso de APIs Externas (Open Food Facts)
 
-Aunque se planificó la integración con APIs externas como Open Food Facts, la mayoría de las APIs no estaban disponibles o sus datos eran inválidos.  
+Aunque se planificó la integración con APIs externas como Open Food Facts, la mayoría de las APIs no estaban disponibles o inválidas.  
 Por ejemplo, la consulta:
 ```bash
 https://world.openfoodfacts.org/api/v2/search?countries=chile&categories=food
 ```
 solo devolvía correctamente el nombre de un producto; los demás datos no contenían el nombre ni otros campos necesarios.
 Debido a esto, se decidió **realizar las pruebas utilizando datos locales** almacenados en la base de datos del proyecto, es decir, los productos contenidos en **`data.sql`**.
-
 ---
 
 ## 📦 3. Dataset de Ejemplo con Productos
