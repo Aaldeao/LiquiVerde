@@ -88,11 +88,7 @@ El sistema busca alternativas dentro de la misma categoría.
 
 * **Priorización:** Las alternativas válidas se ordenan de forma descendente basándose en su `ScoreTotal` para promover las opciones más sostenibles.
 
-### 2.3. Configuración de APIs y Variables de Entorno
-
-Se asume que los scores de sostenibilidad se han pre-calculado y almacenado en la tabla `productos`. La integración con APIs externas (como Open Food Facts o Carbon Interface) se realizaría inyectando las URLs y claves mediante variables de entorno como: `OFF_API_URL`, `CARBON_API_KEY`, etc.
-
-### 2.4. Uso de APIs
+### 2.3. Uso de APIs
 
 Aunque se planificó la integración con APIs externas como **Open Food Facts**, las pruebas iniciales mostraron que la calidad y consistencia de los datos recuperados no eran adecuadas. Por ejemplo, al consultar la siguiente URL:
 ```bash
