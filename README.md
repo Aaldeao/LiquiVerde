@@ -94,7 +94,7 @@ Se asume que los scores de sostenibilidad se han pre-calculado y almacenado en l
 
 ### 2.4. Uso de APIs
 
-Aunque se planificó la integración con APIs externas como **Open Food Facts**, las pruebas iniciales mostraron que la calidad y consistencia de los datos recuperados no eran adecuadas.Por ejemplo, al consultar la siguiente URL:
+Aunque se planificó la integración con APIs externas como **Open Food Facts**, las pruebas iniciales mostraron que la calidad y consistencia de los datos recuperados no eran adecuadas. Por ejemplo, al consultar la siguiente URL:
 ```bash
 https://world.openfoodfacts.org/api/v2/search?countries=chile&categories=food
 ```
