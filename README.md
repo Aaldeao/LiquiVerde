@@ -35,26 +35,28 @@ Debe configurar una base de datos local que coincida con la configuración del p
     # Credenciales de la Base de Datos
     spring.datasource.url=jdbc:postgresql://localhost:5432/grupolagos
     spring.datasource.username=**USER***
-    spring.datasource.password=**your_strong_password** 
-    
-    # Configuracion JPA para inicializar la DB con tablas (Producto, ListaCompra)
-    spring.jpa.hibernate.ddl-auto=update
-    spring.sql.init.mode=always
+    spring.datasource.password=**YOUR_PASSWORD** 
     # ... otras propiedades
     ```
     ***Importante:*** *Use su contraseña real de PostgreSQL en el archivo.*
 
 ### 1.3. Ejecución de la Aplicación
 
-1.  **Compilar y Empaquetar:**
-    ```bash
-    ./mvnw clean install
-    ```
-2.  **Ejecutar la Aplicación:**
-    ```bash
-    java -jar target/LiquiVerde-0.0.1-SNAPSHOT.jar
-    ```
-    La API estará disponible en **`http://localhost:8090`**.
+#### Backend
+Desde la terminal, dentro de la carpeta raíz del proyecto `LiquiVerde`, ejecuta:
+```bash
+mvn spring-boot:run
+```
+#### Frontend
+Desde la terminal, dentro de la carpeta del frontend:
+```bash
+npm install # si es la primera vez que instalas dependencias
+```
+Luego:
+```bash
+npm run dev
+```
+Esto levantará la aplicación frontend en modo desarrollo, accesible en: [http://localhost:5173/](http://localhost:5173/)
 
 ---
 

@@ -17,8 +17,7 @@ public class OptimizacionService {
     }
 
     /**
-     * Implementación del Algoritmo de Mochila Multi-objetivo
-     * Criterios: 1) Maximizar Score Total (Sostenibilidad), 2) Restricción de Presupuesto.
+     * Implementación del Algoritmo de Mochila Multi-objetivo para optimizar una lista de compra
      */
     public ListaCompra optimizarLista(ListaCompra lista) {
         // 1. Obtener los productos reales de la DB
