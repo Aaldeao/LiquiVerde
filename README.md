@@ -117,10 +117,10 @@ Se requiere cargar datos en la tabla `productos` para probar la optimización. E
 Durante el desarrollo de **LiquiVerde**, se utilizó Inteligencia Artificial para apoyar en distintas áreas:
 
 ### 1. Corrección de errores en el backend
-- Se empleó IA para identificar posibles problemas en la lógica del código y sugerir correcciones eficientes.
+- Se empleó IA para identificar problemas en la lógica del código y sugerir correcciones eficientes.
 
 ### 2. Optimización de algoritmos
-- La IA ayudó a definir cómo abordar los algoritmos de optimización de manera más clara y eficiente, incluyendo la heurística multi-criterio y el sistema de sustitución de productos.
+- La IA ayudó a definir cómo abordar los algoritmos manera más clara y eficiente.
 
 ### 3. Mejora de la interfaz de usuario
 - Se utilizó IA para orientar el diseño del frontend, asegurando que la plataforma sea **intuitiva, clara y agradable** para los usuarios.
